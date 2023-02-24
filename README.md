@@ -2,7 +2,7 @@
 COP4520 Assignment 2 
 
 Running:
-Open terminal and navigate to the folder where MinotaurLabyrinth.java and MinotaurVase.java are saved.
+Download MinotaurLabyrinth.java and MinotaurVase.java. Open terminal and navigate to the folder where MinotaurLabyrinth.java and MinotaurVase.java are saved.
 
 To run MinotaurLabyrinth.java, Type in the terminal:
 javac MinotaurLabyrinth.java
@@ -15,12 +15,16 @@ javac MinotaurVase.java
 followed by
 java MinotaurVase.java
 
+For both programs, there is a variable at the top called numGuests, which is set to 100 in the program. If you would like to try running the program with different values for the number of guests, simply change the value of numGuests. 
+
 Statements:
 This program simulates the processes of knowing when all guests have visited the minotaur's labyrinth, and when all guests have viewed the minotaur's vase. 
 
 For the labyrinth problem, the program assigns a guest to be the "leader". This guest is responsible for keeping count of the number of guests who have entered the labyrinth. My approach to the problem was that every guest can only eat the cupcake during their first visit to the labyrinth where it is present. The leader will keep count of each time the cupcake has been eaten. Once this count has reached the number of guests total, the leader may declare that all the guests have visited the labyrinth and the program ends. 
 
-Efficiency:
+Efficiency: 
+Labyrinth: 
+The code currently creates numGuest number of threads that represent the number of guests that visit the labyrinth. Through the simulation, each thread is selected randomly to enter the labyrinth. A thread will be marked as "hasVisited" if they have visited the labyrinth AND eaten the cupcake previously. A thread may only eat the cupcake the first time they visit the labyrinth and it is avaliable. Each time the leader thread visited the labyrinth and sees the cupcake is gone, it increments a counter by one. Once that counter hits the number of guests there are, the leader knows that every guest has visited the labyrinth and the program ends. There can be many threads created in the program. For example., numGuests can be set to 100. Since this is a large number of threads there is alot of work to be done simulating threads being randomly selected until each thread has visited the labyinrth and eaten the cupcake before the program can end. Running the program with numGuests equal to 100 five different times give us the runtimes 6798 milliseconds, 7298 milliseconds, 5797 milliseconds, 6354 milliseconds, and 5822 milliseconds. As these runtimes aren't too high for a large number of threads (100) we can say the program is decently efficient.   
 
 Proof of correctness:
 Labyrinth:
