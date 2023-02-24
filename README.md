@@ -29,13 +29,9 @@ Proof of correctness:
     Vases:
         For the vase problem, I have selected strategy number 2 to simulate, which is as follows:
          
-         "The Minotaur’s second strategy allowed the guests to place a sign on the door 
-indicating when the showroom is available. The sign would read “AVAILABLE” or 
-“BUSY.” Every guest is responsible to set the sign to “BUSY” when entering the 
-showroom and back to “AVAILABLE” upon exit. That way guests would not bother trying 
-to go to the showroom if it is not available. "
+The Minotaur’s second strategy allowed the guests to place a sign on the door indicating when the showroom is available. The sign would read “AVAILABLE” or “BUSY.” Every guest is responsible to set the sign to “BUSY” when entering the  showroom and back to “AVAILABLE” upon exit. That way guests would not bother trying to go to the showroom if it is not available. "
 
-        I used this approach where each guest places a sign starting "BUSY" or "AVAILBLE" on the door as they enter or exit respectively. This strategy works well for this problem and is easy to simulate in code as each guest can be selected at random to enter the room. There is a boolean variable denoting whether the room is avaliable or not. If the room is avaliable the guests may enter the room, changing the variable from true to false. This is the equivalent to putting up a sign that says "BUSY". As the guest views the room, they are then marked as having viewed the room, and the total count of people who have viewed the room is incremented. Then, as they leave the room, the boolean variable changes from false back to true, signaling that the signed that says "AVAILABLE" has been put up and the next guest may enter the room. I believe this solution simulates the problem well and is very efficient as it can have 100 guests visit the room in 644 milliseconds. 
+I used this approach where each guest places a sign starting "BUSY" or "AVAILBLE" on the door as they enter or exit respectively. This strategy works well for this problem and is easy to simulate in code as each guest can be selected at random to enter the room. There is a boolean variable denoting whether the room is avaliable or not. If the room is avaliable the guests may enter the room, changing the variable from true to false. This is the equivalent to putting up a sign that says "BUSY". As the guest views the room, they are then marked as having viewed the room, and the total count of people who have viewed the room is incremented. Then, as they leave the room, the boolean variable changes from false back to true, signaling that the signed that says "AVAILABLE" has been put up and the next guest may enter the room. I believe this solution simulates the problem well and is very efficient as it can have 100 guests visit the room in 644 milliseconds. 
         
 
 Experimental Evaluation: 
