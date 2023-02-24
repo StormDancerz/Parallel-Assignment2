@@ -6,11 +6,13 @@ Open terminal and navigate to the folder where MinotaurLabyrinth.java and Minota
 
 To run MinotaurLabyrinth.java, Type in the terminal:
 javac MinotaurLabyrinth.java
+followed by
 java MinotaurLabyrinth.java
 
 
 To run MinotaurLabyrinth.java, Type in the terminal:
 javac MinotaurVase.java
+followed by
 java MinotaurVase.java
 
 Statements:
