@@ -25,11 +25,17 @@ Efficiency:
 Proof of correctness:
 
 Experimental Evaluation: 
+    the code currently has numGuests = 100, to test runtimes with other guests just change the numGuests variable to be equal to something else 
+MinotaurLabyrinth.java Runtimes:
+10 guests - 215 milliseconds
+25 guests - 394 milliseconds
+50 guests - 1127 milliseconds
+75 guests - 3876 milliseconds
+100 guests - 6798 milliseconds
 
 MinotaurVase.java Runtimes:
-5 guests - 240 milliseconds
-10 guests - 260 milliseconds
-25 guests - 334 milliseconds
-50 guests - 383 milliseconds
-75 guests - 535 milliseconds
-100 guests - 593 milliseconds
+10 guests - 202 milliseconds
+25 guests - 267 milliseconds
+50 guests - 332 milliseconds
+75 guests - 482 milliseconds
+100 guests - 644 milliseconds
