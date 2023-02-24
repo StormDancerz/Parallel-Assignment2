@@ -27,7 +27,7 @@ Proof of correctness:
         The approach to the labyrinth problem closely resembles the prisoner's lightbulb problem that we went over in class. The guest assigned to be the leader is to count each time the cupcake is no longer in the labyrinth and must be replaced. As each guest will eat the cupcake once and only once, the leader will know the decalre that all guests have viewed the labyrinth once their count reaches whatever number of guests there are. The program prints out when each guest eats their cupcake and the current count of cupcakes that have been eaten. As each guest eats a cupcake before the program is over and the final count is always equal to the number of guests, we can assume the program is correctly simulating the minotaur's labyrinth. 
         
     Vases:
-        For the vase problem, I have selected strategy number 2 to simulate, which is as follows:
+        For the vase problem, I have selected strategy number 2 to simulate, which is as follows,
          
 The Minotaur’s second strategy allowed the guests to place a sign on the door indicating when the showroom is available. The sign would read “AVAILABLE” or “BUSY.” Every guest is responsible to set the sign to “BUSY” when entering the  showroom and back to “AVAILABLE” upon exit. That way guests would not bother trying to go to the showroom if it is not available. "
 
