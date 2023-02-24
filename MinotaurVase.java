@@ -70,7 +70,7 @@ public class MinotaurVase {
         }
         // simulate picking guests at random
         while (haveViewedVase < numGuests) {
-            int max = 100;
+            int max = numGuests;
             int min = 0;
             currentThread = (int) ((Math.random() * (max - min)) + min);
         }
