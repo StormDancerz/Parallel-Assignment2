@@ -25,3 +25,11 @@ Efficiency:
 Proof of correctness:
 
 Experimental Evaluation: 
+
+MinotaurVase.java Runtimes:
+5 guests - 240 milliseconds
+10 guests - 260 milliseconds
+25 guests - 334 milliseconds
+50 guests - 383 milliseconds
+75 guests - 535 milliseconds
+100 guests - 593 milliseconds
