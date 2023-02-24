@@ -23,6 +23,10 @@ For the labyrinth problem, the program assigns a guest to be the "leader". This 
 Efficiency:
 
 Proof of correctness:
+    Labyrinth:
+        The approach to the labyrinth problem closely resembles the prisoner's lightbulb problem that we went over in class. The guest assigned to be the leader is to count each time the cupcake is no longer in the labyrinth and must be replaced. As each guest will eat the cupcake once and only once, the leader will know the decalre that all guests have viewed the labyrinth once their count reaches whatever number of guests there are. The program prints out when each guest eats their cupcake and the current count of cupcakes that have been eaten. As each guest eats a cupcake before the program is over and the final count is always equal to the number of guests, we can assume the program is correctly simulating the minotaur's labyrinth. 
+        
+        
 
 Experimental Evaluation: 
     the code currently has numGuests = 100, to test runtimes with other guests just change the numGuests variable to be equal to something else 
